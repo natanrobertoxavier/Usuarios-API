@@ -5,17 +5,20 @@ using Usuarios.API.Models;
 
 namespace Usuarios.API.Service;
 
-public class CadastroService
+public class UsuarioService
 {
     private readonly IMapper _mapper;
     private readonly UserManager<Usuario> _userManager;
+    private readonly SignInManager<Usuario> _signManager;
 
-    public CadastroService(
+    public UsuarioService(
         IMapper mapper,
-        UserManager<Usuario> userManager)
+        UserManager<Usuario> userManager,
+        SignInManager<Usuario> signManager)
     {
         _mapper = mapper;
         _userManager = userManager;
+        _signManager = signManager;
     }
 
 
@@ -38,6 +41,16 @@ public class CadastroService
             }
 
             throw new ApplicationException($"Falha ao cadastrar usuário! ERROR: {errors}");
+        }
+    }
+
+    public async Task Login(LoginUsuarioDto dto)
+    {
+        var resultado = await _signManager.PasswordSignInAsync(dto.Username, dto.Password, false, false);
+
+        if (!resultado.Succeeded)
+        {
+            throw new ApplicationException($"Usuário não autenticado!");
         }
     }
 }
