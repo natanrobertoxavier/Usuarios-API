@@ -10,15 +10,22 @@ public class UsuarioService
     private readonly IMapper _mapper;
     private readonly UserManager<Usuario> _userManager;
     private readonly SignInManager<Usuario> _signManager;
+    private readonly TokenService _tokenService;
+
+    public UsuarioService()
+    {
+    }
 
     public UsuarioService(
         IMapper mapper,
         UserManager<Usuario> userManager,
-        SignInManager<Usuario> signManager)
+        SignInManager<Usuario> signManager,
+        TokenService tokenService)
     {
         _mapper = mapper;
         _userManager = userManager;
         _signManager = signManager;
+        _tokenService = tokenService;
     }
 
 
@@ -52,5 +59,7 @@ public class UsuarioService
         {
             throw new ApplicationException($"Usuário não autenticado!");
         }
+
+        _tokenService.GenerateToken(usuario);
     }
 }
