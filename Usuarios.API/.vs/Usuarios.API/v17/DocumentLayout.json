@@ -13,6 +13,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{5BBEAA99-6E0A-4C1B-B4AF-304B1B3D8F2F}|Usuarios.API.csproj|c:\\code\\alura\\usuarios-api\\usuarios.api\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5BBEAA99-6E0A-4C1B-B4AF-304B1B3D8F2F}|Usuarios.API.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BBEAA99-6E0A-4C1B-B4AF-304B1B3D8F2F}|Usuarios.API.csproj|c:\\code\\alura\\usuarios-api\\usuarios.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BBEAA99-6E0A-4C1B-B4AF-304B1B3D8F2F}|Usuarios.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
@@ -32,7 +36,7 @@
               "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
               "ToolTip": "C:\\code\\alura\\Usuarios-API\\Usuarios.API\\Controllers\\UsuarioController.cs",
               "RelativeToolTip": "Controllers\\UsuarioController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-21T21:51:30.688Z",
               "IsPinned": true,
@@ -46,23 +50,10 @@
               "RelativeDocumentMoniker": "Service\\UsuarioService.cs",
               "ToolTip": "C:\\code\\alura\\Usuarios-API\\Usuarios.API\\Service\\UsuarioService.cs",
               "RelativeToolTip": "Service\\UsuarioService.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAgwD4AAAAhAAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAewDwAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-22T20:07:37.396Z",
               "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TokenService.cs",
-              "DocumentMoniker": "C:\\code\\alura\\Usuarios-API\\Usuarios.API\\Service\\TokenService.cs",
-              "RelativeDocumentMoniker": "Service\\TokenService.cs",
-              "ToolTip": "C:\\code\\alura\\Usuarios-API\\Usuarios.API\\Service\\TokenService.cs",
-              "RelativeToolTip": "Service\\TokenService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T20:20:27.663Z",
               "EditorCaption": ""
             },
             {
@@ -80,6 +71,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\code\\alura\\Usuarios-API\\Usuarios.API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\code\\alura\\Usuarios-API\\Usuarios.API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAlwBsAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T20:34:01.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\code\\alura\\Usuarios-API\\Usuarios.API\\Service\\TokenService.cs",
+              "RelativeDocumentMoniker": "Service\\TokenService.cs",
+              "ToolTip": "C:\\code\\alura\\Usuarios-API\\Usuarios.API\\Service\\TokenService.cs",
+              "RelativeToolTip": "Service\\TokenService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T20:20:27.663Z",
+              "EditorCaption": ""
             }
           ]
         }

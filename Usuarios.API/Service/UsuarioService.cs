@@ -12,10 +12,6 @@ public class UsuarioService
     private readonly SignInManager<Usuario> _signManager;
     private readonly TokenService _tokenService;
 
-    public UsuarioService()
-    {
-    }
-
     public UsuarioService(
         IMapper mapper,
         UserManager<Usuario> userManager,
@@ -51,7 +47,7 @@ public class UsuarioService
         }
     }
 
-    public async Task Login(LoginUsuarioDto dto)
+    public async Task<string> Login(LoginUsuarioDto dto)
     {
         var resultado = await _signManager.PasswordSignInAsync(dto.Username, dto.Password, false, false);
 
@@ -60,6 +56,10 @@ public class UsuarioService
             throw new ApplicationException($"Usuário não autenticado!");
         }
 
-        _tokenService.GenerateToken(usuario);
+        var usuario = _signManager.UserManager.Users.FirstOrDefault(o => o.NormalizedUserName == dto.Username.ToUpper());
+
+        var token = _tokenService.GenerateToken(usuario);
+
+        return token;
     }
 }
