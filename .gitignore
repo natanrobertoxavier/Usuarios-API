@@ -458,3 +458,5 @@ $RECYCLE.BIN/
 *.userosscache
 *.s
 .vs\ControleDeMateriais\DesignTimeBuild\.dtbcache.v2
+Usuarios.API/.vs/Usuarios.API/v17/DocumentLayout.json
+/Usuarios.API/.vs
